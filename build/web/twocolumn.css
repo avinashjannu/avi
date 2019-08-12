@@ -1,0 +1,59 @@
+
+
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+   
+    padding: 20px;
+}
+
+/* Main column */
+.main {   
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+   padding-left:100px;
+    padding: 20px;
+}
+.sidenav {
+  
+  overflow: hidden;
+   
+    height:50%;
+    width: 260px;
+   
+    z-index: 1;
+    top: 267;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 16px 18px 16px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #1B3409;
+    display: block;
+}
+
+.sidenav a:hover {
+    color:#9BD770;
+}
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+

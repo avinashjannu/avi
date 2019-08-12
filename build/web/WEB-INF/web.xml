@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>farmer</servlet-name>
+        <servlet-class>structure.farmer</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>fregistersevlet</servlet-name>
+        <servlet-class>controller.fregistersevlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>fdb</servlet-name>
+        <servlet-class>database.fdb</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>farmer</servlet-name>
+        <url-pattern>/farmer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>fregistersevlet</servlet-name>
+        <url-pattern>/fregistersevlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>fdb</servlet-name>
+        <url-pattern>/fdb</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
